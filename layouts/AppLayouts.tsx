@@ -4,6 +4,7 @@ import { FC, ReactNode } from "react";
 import { useAppDispatch, useAppSelector } from "@/hooks/useStore";
 import { Switch } from "@headlessui/react";
 import { appActions } from "@/store/slices/app";
+
 const inter = Inter({ subsets: ["latin"] });
 
 interface Props {
