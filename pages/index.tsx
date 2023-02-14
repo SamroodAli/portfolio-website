@@ -34,23 +34,33 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AppLayout className="p-3">
-        <header className="my-4">
+      <AppLayout>
+        <header className="my-4 p-3">
           <h1 className="text-2xl">Hi! I am Samrood Ali</h1>
           <h2>Full Stack web developer </h2>
         </header>
 
-        <section>
-          <header>
-            <h3> Quick links</h3>
-            <ul className="flex gap-2 md:gap-5 my-3 md:px-6">
-              {quickLinks.map((link) => (
-                <li key={link.href} className="w-full">
-                  <LinkBadge href={link.href} label={link.label} />
-                </li>
-              ))}
-            </ul>
-          </header>
+        <section className="">
+          <ul className="flex flex-wrap gap-2 px-2">
+            {quickLinks.map((link) => (
+              <li key={link.href} className="flex-grow">
+                <LinkBadge href={link.href} label={link.label} />
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="p-3">
+          <p className="m-3">
+            Hi there! 👋 I&apos;m a software engineer with a passion for
+            building and maintaining innovative web applications.
+          </p>
+          <p className="m-3">
+            With over a year of experience in full stack development, I&apos;ve
+            gained a strong foundation in both front-end and back-end
+            technologies, and I&apos;m always looking for new ways to expand my
+            skillset.
+          </p>
         </section>
       </AppLayout>
     </>
