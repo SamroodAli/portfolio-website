@@ -1,5 +1,29 @@
+import { LinkBadge, LinkBadgeProps } from "@/components/LinkBadge";
 import { AppLayout } from "@/layouts/AppLayouts";
 import Head from "next/head";
+
+const quickLinks: LinkBadgeProps[] = [
+  {
+    href: "mailto:devsamrood@gmail.com",
+    label: "Gmail",
+  },
+  {
+    href: "https://www.linkedin.com/in/samrood-ali",
+    label: "Linkedin",
+  },
+  {
+    href: "https://github.com/SamroodAli",
+    label: "Github",
+  },
+  {
+    href: "https://docs.google.com/document/d/e/2PACX-1vT3xvPGKfzcYs645N2WDpQBFdozD2WQdg5lWbkWSXggqenpHdVnMO68ZQUmyi7Ny7ehgFMB6ftod2h5/pub",
+    label: "Resume",
+  },
+  {
+    href: "tel:+917558964767",
+    label: "Phone",
+  },
+];
 
 export default function Home() {
   return (
@@ -10,9 +34,24 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AppLayout>
-        <h1 className="text-2xl">Hi! I am Samrood Ali</h1>
-        <h2>Full Stack web developer </h2>
+      <AppLayout className="p-3">
+        <header className="my-4">
+          <h1 className="text-2xl">Hi! I am Samrood Ali</h1>
+          <h2>Full Stack web developer </h2>
+        </header>
+
+        <section>
+          <header>
+            <h3> Quick links</h3>
+            <ul className="flex gap-2 md:gap-5 my-3 md:px-6">
+              {quickLinks.map((link) => (
+                <li key={link.href} className="w-full">
+                  <LinkBadge href={link.href} label={link.label} />
+                </li>
+              ))}
+            </ul>
+          </header>
+        </section>
       </AppLayout>
     </>
   );
