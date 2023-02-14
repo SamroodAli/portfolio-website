@@ -1,8 +1,5 @@
+import { AppLayout } from "@/layouts/AppLayouts";
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -13,10 +10,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="font-bold underline h-screen w-screen bg-red-300 text-white text-center pt-6">
+      <AppLayout>
         <h1 className="text-2xl">Hi! I am Samrood Ali</h1>
-        <h2>Full Stack web developer ?</h2>
-      </main>
+        <h2>Full Stack web developer </h2>
+      </AppLayout>
     </>
   );
 }
