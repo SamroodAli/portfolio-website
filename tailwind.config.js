@@ -11,7 +11,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        "spin-slow": "spin 15s linear infinite",
+      },
+    },
     screens: {
       xs: "400px",
       ...defaultTheme.screens,

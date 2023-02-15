@@ -53,7 +53,9 @@ export const AppLayout: FC<Props> = ({ children, className }) => {
           onChange={toggleTheme}
           sunColor="darkOrange"
           size={45}
-          className="absolute"
+          className={classNames({
+            "animate-spin-slow md:hover:animate-spin": !isDarkMode,
+          })}
         />
       </nav>
 
