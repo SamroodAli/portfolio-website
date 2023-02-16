@@ -70,7 +70,7 @@ export default function Home() {
           </p>
         </section>
 
-        <p className="p-6 text-sm">
+        <p className="p-6 text-sm md:text-base">
           This is not it. I am working on this portfolio. Thank you for your
           patience
           <span className="block mt-2">
