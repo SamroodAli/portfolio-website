@@ -70,9 +70,10 @@ export default function Home() {
           </p>
         </section>
 
-        <p className="text-xl p-6">
-          This is not it. I am working on this portfolio.
-          <span className="block mt-2 text-base">
+        <p className="p-6 text-sm">
+          This is not it. I am working on this portfolio. Thank you for your
+          patience
+          <span className="block mt-2">
             Click on the {isDarkMode ? "moon" : "sun"} at the top to switch to{" "}
             {isDarkMode ? "day" : "night"} mode
           </span>
