@@ -37,8 +37,10 @@ export default function Home() {
       </Head>
       <AppLayout>
         <header className="my-4 p-3">
-          <h1 className="text-2xl font-extrabold">Hi! I am Samrood Ali</h1>
-          <h2 className="font-bold text-day-900 dark:text-white">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold">
+            Hi! I am Samrood Ali
+          </h1>
+          <h2 className="font-bold text-day-900 md:text-xl lg:text-2xl dark:text-white">
             Full Stack web developer{" "}
           </h2>
         </header>
