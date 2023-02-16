@@ -15,6 +15,19 @@ module.exports = {
       animation: {
         "spin-slow": "spin 15s linear infinite",
       },
+      colors: {
+        day: {
+          900: "#DC4619",
+          800: "#E2542C",
+          700: "#E9633F",
+          600: "#F07252",
+          500: "#F68165",
+          400: "#F98F78",
+          300: "#FCAE9C",
+          200: "#FECDD0",
+          100: "#FFEBF4",
+        },
+      },
     },
     screens: {
       xs: "400px",

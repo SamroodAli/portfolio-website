@@ -11,7 +11,7 @@ export const LinkBadge: FC<LinkBadgeProps> = ({ label, href }) => {
     <Link
       href={href}
       target={href.includes("http") ? "_blank" : undefined}
-      className="bg-teal-800 text-white text-center dark:bg-orange-500 rounded-md text-sm py-1 block w-full"
+      className="text-center rounded-md text-sm py-1 block w-full bg-day-800 text-white"
     >
       {label}
     </Link>
