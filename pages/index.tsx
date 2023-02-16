@@ -1,7 +1,7 @@
 import { LinkBadge, LinkBadgeProps } from "@/components/LinkBadge";
+import { useAppSelector } from "@/hooks/useStore";
 import { AppLayout } from "@/layouts/AppLayouts";
 import Head from "next/head";
-import Link from "next/link";
 
 const quickLinks: LinkBadgeProps[] = [
   {
@@ -27,6 +27,8 @@ const quickLinks: LinkBadgeProps[] = [
 ];
 
 export default function Home() {
+  const { isDarkMode } = useAppSelector((state) => state.app);
+
   return (
     <>
       <Head>
@@ -67,6 +69,14 @@ export default function Home() {
             skillset.
           </p>
         </section>
+
+        <p className="text-xl p-6">
+          This is not it. I am working on this portfolio.
+          <span className="block mt-2 text-base">
+            Click on the {isDarkMode ? "moon" : "sun"} at the top to switch to{" "}
+            {isDarkMode ? "day" : "night"} mode
+          </span>
+        </p>
 
         {/* <section>
           <h3>Interested in my story ?</h3>

@@ -18,6 +18,9 @@ export const Navbar: FC = () => {
 
   return (
     <nav className="flex justify-end p-3 md:p-4 dark:bg-slate-900">
+      <span className="absolute left-1 top-1 rounded-lg px-2 py-1  text-day-900 dark:text-white">
+        Beta
+      </span>
       <DarkModeSwitch
         checked={isDarkMode}
         onChange={toggleTheme}
