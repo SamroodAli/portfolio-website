@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       animation: {
         "spin-slow": "spin 15s linear infinite",
+        "pulse-slow": "pulse 3s linear infinite",
       },
       colors: {
         day: {

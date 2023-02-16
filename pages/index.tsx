@@ -1,5 +1,7 @@
+import { Heading3 } from "@/components/Heading3";
 import { LinkBadge, LinkBadgeProps } from "@/components/LinkBadge";
-import { useAppSelector } from "@/hooks/useStore";
+import { TextSpan } from "@/components/TextSpan";
+import { useTheme } from "@/hooks/useTheme";
 import { AppLayout } from "@/layouts/AppLayouts";
 import Head from "next/head";
 
@@ -27,7 +29,7 @@ const quickLinks: LinkBadgeProps[] = [
 ];
 
 export default function Home() {
-  const { isDarkMode } = useAppSelector((state) => state.app);
+  const { isDarkMode, toggleTheme } = useTheme();
 
   return (
     <>
@@ -37,17 +39,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AppLayout>
+      <AppLayout className="dark:text-slate-100">
         <header className="my-4 p-3">
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold">
             Hi! I am Samrood Ali
           </h1>
-          <h2 className="font-bold text-day-900 md:text-xl lg:text-2xl dark:text-white">
+          <h2 className="font-bold text-day-900 text-xl lg:text-2xl dark:text-teal-300">
             Full Stack web developer{" "}
           </h2>
         </header>
 
-        <section className="">
+        <section>
           <ul className="flex flex-wrap gap-2 px-2">
             {quickLinks.map((link) => (
               <li key={link.href} className="flex-grow">
@@ -57,32 +59,88 @@ export default function Home() {
           </ul>
         </section>
 
-        <section className="p-3">
-          <p className="m-3">
-            Hi there! 👋 I&apos;m a software engineer with a passion for
-            building and maintaining innovative web applications.
-          </p>
-          <p className="m-3">
-            With over a year of experience in full stack development, I&apos;ve
-            gained a strong foundation in both front-end and back-end
-            technologies, and I&apos;m always looking for new ways to expand my
-            skillset.
+        <section className="p-3" id="intro">
+          <p className="py-2">Hi there! 👋 Welcome to my personal website.</p>
+          <p>
+            If you are not a fan of the {isDarkMode ? "dark" : "bright"} theme,
+            click on the {isDarkMode ? "moon" : "sun"} up top or{" "}
+            <span
+              className="text-day-900 dark:text-teal-200"
+              onClick={toggleTheme}
+            >
+              here
+            </span>{" "}
+            to switch to a {isDarkMode ? "lighter" : "darker"} theme.
           </p>
         </section>
 
-        <p className="p-6 text-sm md:text-base">
-          This is not it. I am working on this portfolio. Thank you for your
-          patience
-          <span className="block mt-2">
-            Click on the {isDarkMode ? "moon" : "sun"} at the top to switch to{" "}
-            {isDarkMode ? "day" : "night"} mode
-          </span>
-        </p>
+        <section className="p-3">
+          <header>
+            <Heading3>Who am I ?</Heading3>
+          </header>
+          <p>
+            I&apos;m a software engineer with a passion for building and
+            maintaining innovative web applications. I specialize in Full Stack
+            web development. In short, I can handle all your web related needs
+          </p>
+        </section>
 
-        {/* <section>
-          <h3>Interested in my story ?</h3>
-          <Link href="/about-me">Read here</Link>
-        </section> */}
+        <section id="education" className="p-3">
+          <header>
+            <Heading3>Education</Heading3>
+          </header>
+          <ul>
+            <li className="my-2">
+              Despite beginning my career as a{" "}
+              <TextSpan>Chartered accountancy student</TextSpan> , I made a
+              transition to become a software engineer and have since been
+              dedicated to the craft.{" "}
+              <TextSpan>I taught myself to code</TextSpan>
+              with the book &apos;Head First Kotlin&apos;.
+            </li>
+            <li className="my-2">
+              To learn front-end web development skills, I completed{" "}
+              <TextSpan>Udacity&apos;s Front-end Nanodegree program</TextSpan>,
+              which provided me with a strong foundation in this area.
+            </li>
+            <li className="my-2">
+              In addition, I completed a one-year full-stack{" "}
+              <TextSpan>online coding bootcamp called Microverse </TextSpan>,
+              which equipped me with the latest programming skills, modern
+              development tools, and industry-standard methodologies.
+            </li>
+            <li>
+              I love Javascript and have spent countless hours honing my JS
+              skills through online resources such as
+              <TextSpan> Frontend Masters </TextSpan>
+              and
+              <TextSpan> You don&apos;t know JS</TextSpan>
+            </li>
+
+            <li className="my-3 text-slate-900 dark:text-white rounded-md px-2 italic">
+              Sorry, but if you&apos;re searching for a degree, I&apos;m not
+              your person. No hard feelings though!
+            </li>
+          </ul>
+        </section>
+
+        <section id="experience" className="p-3">
+          <header>
+            <Heading3>Experience</Heading3>
+            <ul>
+              <li>
+                I worked for a year at Superhire, an early stage startup. I was
+                one of the founding full stack web developers there. I wore many
+                hats and worked across the stack. I helped setup repositories
+                and services, and helped build, deploy, test and maintain
+                several features.
+              </li>
+              <span className="block mt-2 text-sm">
+                This section is a work in progress.
+              </span>
+            </ul>
+          </header>
+        </section>
       </AppLayout>
     </>
   );
