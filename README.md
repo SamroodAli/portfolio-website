@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Samrood Ali
+
+Hi there! 👋 Welcome to my personal website.
+If you are not a fan of the dark theme, click on the moon up top or here to switch to a lighter theme.
+I made this all on my own, no tutorials involved, so please bear with me.
+
+## Who am i ?
+
+[Find out here at samroodali.com](htts://www.samroodali.com)
 
 ## Getting Started
 
