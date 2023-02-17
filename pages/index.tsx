@@ -5,7 +5,6 @@ import { Paragraph } from "@/components/Paragraph";
 import { TextSpan } from "@/components/TextSpan";
 import { useTheme } from "@/hooks/useTheme";
 import { AppLayout } from "@/layouts/AppLayouts";
-import classNames from "classnames";
 import Head from "next/head";
 
 const quickLinks: LinkBadgeProps[] = [
@@ -33,35 +32,41 @@ const quickLinks: LinkBadgeProps[] = [
 
 const experienceListItems = [
   <>
-    Implemented features and took full responsibility from planning, writing
+    Implementing features and taking full responsibility from planning, writing
     documentation, designing the database schema, writing API handlers, writing
     services, writing integration and unit tests and deploying these features
     following industry best practices.
   </>,
   <>
-    Implement designs from figma pixel to pixel using React, Next JS and Vue JS
-    for markup, and vanilla CSS and CSS libraries such Tailwind CSS and Material
-    UI for styling following responsive design and accessibility best practices.
+    Implementing designs from figma pixel to pixel using React, Next JS and Vue
+    JS for markup, and vanilla CSS and CSS libraries such Tailwind CSS and
+    Material UI for styling following responsive design and accessibility best
+    practices.
   </>,
   <>
-    Took responsibility and implemented critical auth features such as user
+    Taking responsibility and implementing critical auth features such as user
     onboarding/registration, forgot/reset/change password with OTP mails and
     other industry best practices.
   </>,
   <>
-    Manage PostgreSQL schema and data migrations following db normalization and
-    other best practices
+    Managing PostgreSQL schema and data migrations following db normalization
+    and other best practices
   </>,
   <>
-    High level design RabbitMQ message broker and app special tasks handling.
-    Code Low level designed repositories for publishing and consuming messages.
-    This helped SuperHire manage tasks such as sending onboarding mails,
-    expiring customer job claims within a few days if they are inactive etc.
+    High level designed RabbitMQ message broker to handle special tasks in our
+    app. Wrote and low level designed repositories for publishing and consuming
+    messages. This helped SuperHire manage tasks such as sending onboarding
+    mails, expiring customer job claims within a few days if they are inactive
+    etc.
     <span className="block mt-3">
       Using RabbitMQ helped SuperHire retry these tasks if they failed, get a
       list of pending tasks and a lot more. I also published the client as a npm
       package so that it is accessible easily across projects
     </span>
+  </>,
+  <>
+    Deploy, manage and debug AWS services such as Beanstalk, RDS, s3 among
+    others,
   </>,
   <>
     I automated the workflow of writing a day&apos;s candidate submissions to a
@@ -71,10 +76,6 @@ const experienceListItems = [
   <>
     Read documentation and setup FreshChat, a 3rd party chatbot + chat service
     for SuperHire to engage with their customers.
-  </>,
-  <>
-    Deploy, manage and debug AWS services such as Beanstalk, RDS, s3 among
-    others,
   </>,
   <>Conduct code reviews for fellow engineers following best practices</>,
 
@@ -157,10 +158,7 @@ export default function Home() {
             <li>
               <Paragraph>
                 To learn front-end web development, I completed
-                <TextSpan>
-                  {" "}
-                  Udacity&apos;s Front-end Nanodegree program
-                </TextSpan>
+                <TextSpan>Udacity&apos;s Front-end Nanodegree program</TextSpan>
                 , which provided me with a strong foundation in web development.
               </Paragraph>
             </li>
@@ -189,11 +187,14 @@ export default function Home() {
             <ul>
               <li>
                 <Paragraph className="px-3 md:px-8">
-                  I worked for a year at SuperHire, an early stage startup. I
-                  was one of the founding full stack web developers there. I
-                  wore many hats and worked across the stack. I helped setup
-                  repositories and services, and helped build, test, test and
-                  maintain several features.
+                  During my tenure at SuperHire, an early stage startup, I was
+                  one of the founding Full Stack web developers and had the
+                  opportunity to wear many hats while working across the stack.
+                  I played a key role in setting up repositories and services,
+                  and was responsible for building, testing, and maintaining
+                  several features. My experience as a versatile Full Stack
+                  developer allowed me to contribute to the success of the
+                  startup, and I am proud to have been a part of the team.
                 </Paragraph>
                 <div className="bg-day-900 dark:bg-teal-900 bg-opacity-10 dark:bg-opacity-50 md:dark:bg-opacity-20 p-3 md:p-0 shadow">
                   <p className="px-3  text-day-900 dark:text-teal-300 md:text-center font-medium text-lg md:text-3xl pt-8">
