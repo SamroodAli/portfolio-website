@@ -6,14 +6,10 @@ interface Props extends Element {
   children: ReactNode;
 }
 
-export const Paragraph: FC<Props> = ({ children, ...props }) => {
+export const Paragraph: FC<Props> = ({ children, className }) => {
   return (
     <p
-      {...props}
-      className={classNames(
-        "my-2 text-base md:text-lg lg:text-xl",
-        props.className
-      )}
+      className={classNames("my-2 text-base md:text-lg lg:text-xl", className)}
     >
       {children}
     </p>

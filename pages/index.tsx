@@ -1,9 +1,11 @@
+import { ExperienceListItem } from "@/components/ExperienceListtem";
 import { Heading3 } from "@/components/Heading3";
 import { LinkBadge, LinkBadgeProps } from "@/components/LinkBadge";
 import { Paragraph } from "@/components/Paragraph";
 import { TextSpan } from "@/components/TextSpan";
 import { useTheme } from "@/hooks/useTheme";
 import { AppLayout } from "@/layouts/AppLayouts";
+import classNames from "classnames";
 import Head from "next/head";
 
 const quickLinks: LinkBadgeProps[] = [
@@ -27,6 +29,56 @@ const quickLinks: LinkBadgeProps[] = [
     href: "tel:+917558964767",
     label: "Phone",
   },
+];
+
+const experienceListItems = [
+  <>
+    Implemented features and took full responsibility from planning, writing
+    documentation, designing the database schema, writing API handlers, writing
+    services, writing integration and unit tests and deploying these features
+    following industry best practices.
+  </>,
+  <>
+    Implement designs from figma pixel to pixel using React, Next JS and Vue JS
+    for markup, and vanilla CSS and CSS libraries such Tailwind CSS and Material
+    UI for styling following responsive design and accessibility best practices.
+  </>,
+  <>
+    Took responsibility and implemented critical auth features such as user
+    onboarding/registration, forgot/reset/change password with OTP mails and
+    other industry best practices.
+  </>,
+  <>
+    Manage PostgreSQL schema and data migrations following db normalization and
+    other best practices
+  </>,
+  <>
+    High level design RabbitMQ message broker and app special tasks handling.
+    Code Low level designed repositories for publishing and consuming messages.
+    This helped SuperHire manage tasks such as sending onboarding mails,
+    expiring customer job claims within a few days if they are inactive etc.
+    <span className="block mt-3">
+      Using RabbitMQ helped SuperHire retry these tasks if they failed, get a
+      list of pending tasks and a lot more. I also published the client as a npm
+      package so that it is accessible easily across projects
+    </span>
+  </>,
+  <>
+    I automated the workflow of writing a day&apos;s candidate submissions to a
+    google sheet. This helped the company share the google sheet with other
+    companies early on and procure business.
+  </>,
+  <>
+    Read documentation and setup FreshChat, a 3rd party chatbot + chat service
+    for SuperHire to engage with their customers.
+  </>,
+  <>
+    Deploy, manage and debug AWS services such as Beanstalk, RDS, s3 among
+    others,
+  </>,
+  <>Conduct code reviews for fellow engineers following best practices</>,
+
+  // "Worked across the stack. Our stack was AWS, NameCheap and Google domains, Hapi JS for server, PostgreSQL for our database , Prisma for ORM, React, NextJS and Vue JS for front-end, Tailwind UI and Material UI for styling, Figma for design and bitbucket as our code repository.",
 ];
 
 export default function Home() {
@@ -60,7 +112,7 @@ export default function Home() {
           </ul>
         </section>
 
-        <section className="p-3" id="intro">
+        <section className="p-3 md:p-8" id="intro">
           <Paragraph>Hi there! 👋 Welcome to my personal website.</Paragraph>
           <Paragraph>
             If you are not a fan of the {isDarkMode ? "dark" : "bright"} theme,
@@ -75,7 +127,7 @@ export default function Home() {
           </Paragraph>
         </section>
 
-        <section className="p-3">
+        <section className="p-3 md:px-8">
           <header>
             <Heading3>Who am I ?</Heading3>
           </header>
@@ -86,12 +138,12 @@ export default function Home() {
           </Paragraph>
         </section>
 
-        <section id="education" className="p-3">
+        <section id="education" className="p-3 md:px-8">
           <header>
             <Heading3>Education</Heading3>
           </header>
           <ul>
-            <li className="my-2">
+            <li>
               <Paragraph>
                 Despite beginning my career as a
                 <TextSpan> Chartered accountancy student</TextSpan> , I made a
@@ -102,7 +154,7 @@ export default function Home() {
                 programming ever since.
               </Paragraph>
             </li>
-            <li className="my-2">
+            <li>
               <Paragraph>
                 To learn front-end web development, I completed
                 <TextSpan>
@@ -112,7 +164,7 @@ export default function Home() {
                 , which provided me with a strong foundation in web development.
               </Paragraph>
             </li>
-            <li className="my-2">
+            <li>
               <Paragraph>
                 In addition, I completed a<TextSpan> 1 year</TextSpan>{" "}
                 Full-Stack
@@ -121,39 +173,49 @@ export default function Home() {
                 development tools, and industry-standard methodologies.
               </Paragraph>
             </li>
-            <li>
-              <Paragraph>
-                I love <TextSpan> Javascript</TextSpan> and have spent countless
-                hours honing my JS skills through online resources such as
-                <TextSpan> Frontend Masters </TextSpan>
-                and
-                <TextSpan> You don&apos;t know JS</TextSpan>
-              </Paragraph>
-            </li>
 
-            <li className="my-3 text-slate-900 dark:text-white rounded-md px-2 italic">
-              Sorry, but if you&apos;re searching for a degree, I&apos;m not
-              your person. No hard feelings though!
+            <li>
+              <Paragraph className="italic">
+                Sorry, but if you&apos;re searching for a degree, I&apos;m not
+                your person. No hard feelings though!
+              </Paragraph>
             </li>
           </ul>
         </section>
 
-        <section id="experience" className="p-3">
+        <section id="experience">
           <header>
-            <Heading3>Experience</Heading3>
+            <Heading3 className="mx-3 md:mx-8">Experience</Heading3>
             <ul>
               <li>
-                <Paragraph>
-                  I worked for a year at Superhire, an early stage startup. I
+                <Paragraph className="px-3 md:px-8">
+                  I worked for a year at SuperHire, an early stage startup. I
                   was one of the founding full stack web developers there. I
                   wore many hats and worked across the stack. I helped setup
-                  repositories and services, and helped build, deploy, test and
+                  repositories and services, and helped build, test, test and
                   maintain several features.
                 </Paragraph>
+                <div className="bg-day-900 dark:bg-teal-900 bg-opacity-10 dark:bg-opacity-50 md:dark:bg-opacity-20 p-3 md:p-0 shadow">
+                  <p className="px-3  text-day-900 dark:text-teal-300 md:text-center font-medium text-lg md:text-3xl pt-8">
+                    Here are some of the things I did at SuperHire:
+                  </p>
+                  <ul
+                    id="SuperHire-things"
+                    className="list-disc md:grid md:grid-cols-2 md:px-16 lg:px-16 xl:px-32 px-8"
+                  >
+                    {experienceListItems.map((item, index) => (
+                      <ExperienceListItem
+                        key={index}
+                        className={
+                          "even:text-day-900 even:md:text-black even:dark:text-teal-200 dark:text-white even:md:dark:text-white md:p-3"
+                        }
+                      >
+                        {item}
+                      </ExperienceListItem>
+                    ))}
+                  </ul>
+                </div>
               </li>
-              <span className="block mt-2 text-sm">
-                This section is a work in progress.
-              </span>
             </ul>
           </header>
         </section>

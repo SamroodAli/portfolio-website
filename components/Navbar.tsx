@@ -1,12 +1,19 @@
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { useTheme } from "@/hooks/useTheme";
 import { FC } from "react";
+import { Element } from "@/types/Element";
+import classNames from "classnames";
 
-export const Navbar: FC = () => {
+export const Navbar: FC<Element> = ({ className }) => {
   const { isDarkMode, toggleTheme } = useTheme();
 
   return (
-    <nav className="flex justify-end p-3 md:p-4 dark:bg-slate-900">
+    <nav
+      className={classNames(
+        "flex justify-end p-3 md:p-4 dark:bg-slate-900",
+        className
+      )}
+    >
       <span className="absolute left-1 top-1 rounded-lg px-2 py-1  text-day-900 dark:text-white">
         Beta
       </span>

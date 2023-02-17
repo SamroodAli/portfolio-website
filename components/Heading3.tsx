@@ -1,17 +1,15 @@
-import { headingFont } from "@/fonts";
+import { fira } from "@/fonts";
+import { ContainerElement } from "@/types/Element";
 import classNames from "classnames";
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 
-interface Props {
-  children: ReactNode;
-}
-
-export const Heading3: FC<Props> = ({ children }) => {
+export const Heading3: FC<ContainerElement> = ({ children, className }) => {
   return (
     <h3
       className={classNames(
-        "my-3 italic underline underline-offset-8 text-xl xs:text-2xl sm:text-3xl lg:text-4xl text-day-900 dark:text-teal-300 font-bold lg:my-4",
-        headingFont.className
+        "my-3 italic underline underline-offset-8 text-lg xxs:text-2xl sm:text-3xl lg:text-3xl text-day-900 dark:text-teal-300 font-medium lg:my-4",
+        fira.className,
+        className
       )}
     >
       {children}

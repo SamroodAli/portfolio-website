@@ -28,7 +28,7 @@ export const AppLayout: FC<Props> = ({ children, className }) => {
 
       <div
         className={classNames(
-          "dark:bg-slate-900 dark:text-white flex-grow ",
+          "dark:bg-slate-900 dark:text-white flex-grow",
           className
         )}
       >
