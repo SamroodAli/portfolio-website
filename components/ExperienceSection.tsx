@@ -94,7 +94,7 @@ export const ExperienceSection = () => {
               Stack developer allowed me to contribute to the success of the
               startup, and I am proud to have been a part of the team.
             </Paragraph>
-            <div className="bg-day-900 dark:bg-teal-900 bg-opacity-10 dark:bg-opacity-50 md:dark:bg-opacity-20 p-3 md:my-12 rounded-lg shadow-lg">
+            <div className="bg-day-900 dark:bg-teal-900 bg-opacity-10 dark:bg-opacity-50 md:dark:bg-opacity-20 p-3 md:my-12 md:rounded-lg shadow-sm">
               <div className="px-3  text-day-900 dark:text-teal-300 md:text-center font-medium text-lg md:text-3xl py-8">
                 <p className="">
                   Here are some of the things I did at SuperHire

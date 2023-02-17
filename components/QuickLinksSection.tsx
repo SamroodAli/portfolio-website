@@ -2,7 +2,7 @@ import { LinkBadge, LinkBadgeProps } from "@/components/LinkBadge";
 
 const quickLinks: LinkBadgeProps[] = [
   {
-    href: "mailto:devsamrood@gmail.com",
+    href: `mailto:${process.env.NEXT_PUBLIC_MY_EMAIL}`,
     label: "Gmail",
   },
   {
@@ -18,7 +18,7 @@ const quickLinks: LinkBadgeProps[] = [
     label: "Resume",
   },
   {
-    href: "tel:+917558964767",
+    href: `tel:${process.env.NEXT_PUBLIC_MY_PHONE}`,
     label: "Phone",
   },
 ];

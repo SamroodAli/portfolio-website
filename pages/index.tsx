@@ -1,3 +1,4 @@
+import { ContactMeSection } from "@/components/ContactMeSection";
 import { EducationSection } from "@/components/EducationSection";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { HeaderSection } from "@/components/HeaderSection";
@@ -21,6 +22,7 @@ export default function Home() {
         <IntroSection />
         <EducationSection />
         <ExperienceSection />
+        <ContactMeSection />
       </AppLayout>
     </>
   );
