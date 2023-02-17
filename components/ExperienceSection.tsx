@@ -1,4 +1,4 @@
-import { ExperienceListItem } from "@/components/ExperienceListtem";
+import { ExperienceListItem } from "@/components/ExperienceListItem";
 import { Heading3 } from "@/components/Heading3";
 import { LinkTextSpan } from "@/components/LinkTextSpan";
 import { Paragraph } from "@/components/Paragraph";
