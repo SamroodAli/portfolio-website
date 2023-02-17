@@ -1,5 +1,6 @@
 import { ExperienceListItem } from "@/components/ExperienceListtem";
 import { Heading3 } from "@/components/Heading3";
+import { LinkTextSpan } from "@/components/LinkTextSpan";
 import { Paragraph } from "@/components/Paragraph";
 
 const experienceListItems = [
@@ -81,22 +82,24 @@ export const ExperienceSection = () => {
         <ul>
           <li>
             <Paragraph className="px-3 md:px-4">
-              During my tenure at SuperHire, an early stage startup, I was one
-              of the founding Full Stack web developers and had the opportunity
-              to wear many hats while working across the stack. I played a key
-              role in setting up repositories and services, and was responsible
-              for building, testing, and maintaining several features. My
-              experience as a versatile Full Stack developer allowed me to
-              contribute to the success of the startup, and I am proud to have
-              been a part of the team.
+              During my tenure at{" "}
+              <LinkTextSpan href="http://superhire.net/">
+                SuperHire
+              </LinkTextSpan>
+              , an early stage startup, I was one of the founding Full Stack web
+              developers and had the opportunity to wear many hats while working
+              across the stack. I played a key role in setting up repositories
+              and services, and was responsible for building, testing, and
+              maintaining several features. My experience as a versatile Full
+              Stack developer allowed me to contribute to the success of the
+              startup, and I am proud to have been a part of the team.
             </Paragraph>
             <div className="bg-day-900 dark:bg-teal-900 bg-opacity-10 dark:bg-opacity-50 md:dark:bg-opacity-20 p-3 md:my-12 rounded-lg shadow-lg">
-              <p className="px-3  text-day-900 dark:text-teal-300 md:text-center font-medium text-lg md:text-3xl py-8">
-                I had the privilege of contributing to several key initiatives{" "}
-                <span className="md:block">
-                  during my time at SuperHire, including:
-                </span>
-              </p>
+              <div className="px-3  text-day-900 dark:text-teal-300 md:text-center font-medium text-lg md:text-3xl py-8">
+                <p className="">
+                  Here are some of the things I did at SuperHire
+                </p>
+              </div>
               <ul
                 id="SuperHire-things"
                 className="list-disc flex flex-col md:grid md:grid-cols-2 md:px-16 px-4 lg:px-8 xl:px-16 gap-x-8"
