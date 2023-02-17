@@ -46,6 +46,13 @@ const experienceListItems = [
     practices.
   </>,
   <>
+    High level designed RabbitMQ message broker to handle special tasks in our
+    app. Wrote and low level designed repositories for publishing and consuming
+    messages. This helped SuperHire manage tasks such as sending onboarding
+    mails, expiring customer job claims within a few days if they are inactive
+    etc.
+  </>,
+  <>
     Taking responsibility and implementing critical auth features such as user
     onboarding/registration, forgot/reset/change password with OTP mails and
     other industry best practices.
@@ -55,23 +62,11 @@ const experienceListItems = [
     and other best practices
   </>,
   <>
-    High level designed RabbitMQ message broker to handle special tasks in our
-    app. Wrote and low level designed repositories for publishing and consuming
-    messages. This helped SuperHire manage tasks such as sending onboarding
-    mails, expiring customer job claims within a few days if they are inactive
-    etc.
-    <span className="block mt-3">
-      Using RabbitMQ helped SuperHire retry these tasks if they failed, get a
-      list of pending tasks and a lot more. I also published the client as a npm
-      package so that it is accessible easily across projects
-    </span>
-  </>,
-  <>
     Deploy, manage and debug AWS services such as Beanstalk, RDS, s3 among
     others,
   </>,
   <>
-    I automated the workflow of writing a day&apos;s candidate submissions to a
+    Automated the workflow of writing a day&apos;s candidate submissions to a
     google sheet. This helped the company share the google sheet with other
     companies early on and procure business.
   </>,
@@ -207,7 +202,7 @@ export default function Home() {
             <Heading3 className="mx-3 md:mx-8">Experience</Heading3>
             <ul>
               <li>
-                <Paragraph className="px-3 md:px-8">
+                <Paragraph className="px-3 md:px-4">
                   During my tenure at SuperHire, an early stage startup, I was
                   one of the founding Full Stack web developers and had the
                   opportunity to wear many hats while working across the stack.
@@ -217,13 +212,13 @@ export default function Home() {
                   developer allowed me to contribute to the success of the
                   startup, and I am proud to have been a part of the team.
                 </Paragraph>
-                <div className="bg-day-900 dark:bg-teal-900 bg-opacity-10 dark:bg-opacity-50 md:dark:bg-opacity-20 p-3 md:my-12 shadow rounded-lg">
+                <div className="bg-day-900 dark:bg-teal-900 bg-opacity-10 dark:bg-opacity-50 md:dark:bg-opacity-20 p-3 md:my-12 rounded-lg shadow-lg">
                   <p className="px-3  text-day-900 dark:text-teal-300 md:text-center font-medium text-lg md:text-3xl py-8">
                     Here are some of the things I did at SuperHire:
                   </p>
                   <ul
                     id="SuperHire-things"
-                    className="list-disc md:grid md:grid-cols-2 md:px-16 gap-2 lg:px-16 xl:px-32 px-8"
+                    className="list-disc flex flex-col md:grid md:grid-cols-2 md:px-16 px-4 lg:px-8 xl:px-16 gap-x-8"
                   >
                     {experienceListItems.map((item, index) => (
                       <ExperienceListItem
