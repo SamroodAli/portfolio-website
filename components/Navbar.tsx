@@ -10,11 +10,11 @@ export const Navbar: FC<Element> = ({ className }) => {
   return (
     <nav
       className={classNames(
-        "flex justify-end p-3 md:p-4 dark:bg-slate-900",
+        "flex justify-end p-3 md:p-4 dark:bg-slate-900 bg-white app-width relative",
         className
       )}
     >
-      <span className="absolute left-1 top-1 rounded-lg px-2 py-1  text-day-900 dark:text-white">
+      <span className="absolute left-1 top-1 rounded-lg px-2 py-1  text-day-900 dark:text-teal-300">
         Beta
       </span>
       <DarkModeSwitch

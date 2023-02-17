@@ -223,7 +223,7 @@ export default function Home() {
                   </p>
                   <ul
                     id="SuperHire-things"
-                    className="list-disc md:grid md:grid-cols-2 md:px-16 lg:px-16 xl:px-32 px-8"
+                    className="list-disc md:grid md:grid-cols-2 md:px-16 gap-2 lg:px-16 xl:px-32 px-8"
                   >
                     {experienceListItems.map((item, index) => (
                       <ExperienceListItem

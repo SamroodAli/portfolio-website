@@ -17,21 +17,26 @@ export const AppLayout: FC<Props> = ({ children, className }) => {
 
   return (
     <main
-      className={classNames("dark:text-white flex flex-col", inter.className, {
-        "dark bg-teal-900 bg-opacity-70": isDarkMode,
-        "bg-day-900 bg-opacity-40": !isDarkMode,
-      })}
+      className={classNames(
+        "dark:text-white absolute top-0 left-0 right-0 bottom-0 flex flex-col",
+        inter.className,
+        {
+          dark: isDarkMode,
+        }
+      )}
     >
       <Navbar />
 
       <div
         className={classNames(
-          "dark:bg-slate-900 dark:text-white flex-grow app-width bg-white ",
+          "dark:bg-slate-900 dark:text-white flex-grow",
           className
         )}
       >
         {children}
       </div>
+
+      <Footer />
     </main>
   );
 };
