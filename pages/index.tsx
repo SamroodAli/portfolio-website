@@ -113,7 +113,7 @@ export default function Home() {
           </ul>
         </section>
 
-        <section className="p-3 md:p-8" id="intro">
+        <section className="px-3  md:px-8 my-4" id="intro">
           <Paragraph>Hi there! 👋 Welcome to my personal website.</Paragraph>
           <Paragraph>
             If you are not a fan of the {isDarkMode ? "dark" : "bright"} theme,
