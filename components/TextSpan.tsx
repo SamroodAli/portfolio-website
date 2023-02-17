@@ -10,7 +10,7 @@ export const TextSpan: FC<Props> = ({ children }) => {
   return (
     <span
       className={classNames(
-        "italic text-lg text-day-900 dark:text-teal-300 font-medium",
+        "italic text-lg sm:text-xl md:text-xl lg:text-2xl text-day-900 dark:text-teal-300 font-medium",
         headingFont.className
       )}
     >

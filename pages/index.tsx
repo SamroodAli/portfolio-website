@@ -1,5 +1,6 @@
 import { Heading3 } from "@/components/Heading3";
 import { LinkBadge, LinkBadgeProps } from "@/components/LinkBadge";
+import { Paragraph } from "@/components/Paragraph";
 import { TextSpan } from "@/components/TextSpan";
 import { useTheme } from "@/hooks/useTheme";
 import { AppLayout } from "@/layouts/AppLayouts";
@@ -60,8 +61,8 @@ export default function Home() {
         </section>
 
         <section className="p-3" id="intro">
-          <p className="py-2">Hi there! 👋 Welcome to my personal website.</p>
-          <p>
+          <Paragraph>Hi there! 👋 Welcome to my personal website.</Paragraph>
+          <Paragraph>
             If you are not a fan of the {isDarkMode ? "dark" : "bright"} theme,
             click on the {isDarkMode ? "moon" : "sun"} up top or{" "}
             <span
@@ -71,18 +72,18 @@ export default function Home() {
               here
             </span>{" "}
             to switch to a {isDarkMode ? "lighter" : "darker"} theme.
-          </p>
+          </Paragraph>
         </section>
 
         <section className="p-3">
           <header>
             <Heading3>Who am I ?</Heading3>
           </header>
-          <p>
+          <Paragraph>
             I&apos;m a software engineer with a passion for building and
             maintaining innovative web applications. I specialize in Full Stack
             web development. In short, I can handle all your web related needs
-          </p>
+          </Paragraph>
         </section>
 
         <section id="education" className="p-3">
@@ -91,30 +92,43 @@ export default function Home() {
           </header>
           <ul>
             <li className="my-2">
-              Despite beginning my career as a{" "}
-              <TextSpan>Chartered accountancy student</TextSpan> , I made a
-              transition to become a software engineer and have since been
-              dedicated to the craft.{" "}
-              <TextSpan>I taught myself to code</TextSpan>
-              with the book &apos;Head First Kotlin&apos;.
+              <Paragraph>
+                Despite beginning my career as a
+                <TextSpan> Chartered accountancy student</TextSpan> , I made a
+                transition to become a software engineer and have since been
+                dedicated to the craft.
+                <TextSpan> I taught myself to code</TextSpan> with the book
+                &apos;Head First Kotlin&apos; and have fallen in love with
+                programming ever since.
+              </Paragraph>
             </li>
             <li className="my-2">
-              To learn front-end web development skills, I completed{" "}
-              <TextSpan>Udacity&apos;s Front-end Nanodegree program</TextSpan>,
-              which provided me with a strong foundation in this area.
+              <Paragraph>
+                To learn front-end web development, I completed
+                <TextSpan>
+                  {" "}
+                  Udacity&apos;s Front-end Nanodegree program
+                </TextSpan>
+                , which provided me with a strong foundation in web development.
+              </Paragraph>
             </li>
             <li className="my-2">
-              In addition, I completed a one-year full-stack{" "}
-              <TextSpan>online coding bootcamp called Microverse </TextSpan>,
-              which equipped me with the latest programming skills, modern
-              development tools, and industry-standard methodologies.
+              <Paragraph>
+                In addition, I completed a<TextSpan> 1 year</TextSpan>{" "}
+                Full-Stack
+                <TextSpan> online coding boot-camp, Microverse </TextSpan>,
+                which equipped me with the latest programming skills, modern
+                development tools, and industry-standard methodologies.
+              </Paragraph>
             </li>
             <li>
-              I love Javascript and have spent countless hours honing my JS
-              skills through online resources such as
-              <TextSpan> Frontend Masters </TextSpan>
-              and
-              <TextSpan> You don&apos;t know JS</TextSpan>
+              <Paragraph>
+                I love <TextSpan> Javascript</TextSpan> and have spent countless
+                hours honing my JS skills through online resources such as
+                <TextSpan> Frontend Masters </TextSpan>
+                and
+                <TextSpan> You don&apos;t know JS</TextSpan>
+              </Paragraph>
             </li>
 
             <li className="my-3 text-slate-900 dark:text-white rounded-md px-2 italic">
@@ -129,11 +143,13 @@ export default function Home() {
             <Heading3>Experience</Heading3>
             <ul>
               <li>
-                I worked for a year at Superhire, an early stage startup. I was
-                one of the founding full stack web developers there. I wore many
-                hats and worked across the stack. I helped setup repositories
-                and services, and helped build, deploy, test and maintain
-                several features.
+                <Paragraph>
+                  I worked for a year at Superhire, an early stage startup. I
+                  was one of the founding full stack web developers there. I
+                  wore many hats and worked across the stack. I helped setup
+                  repositories and services, and helped build, deploy, test and
+                  maintain several features.
+                </Paragraph>
               </li>
               <span className="block mt-2 text-sm">
                 This section is a work in progress.
