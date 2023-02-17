@@ -92,7 +92,10 @@ export const ExperienceSection = () => {
             </Paragraph>
             <div className="bg-day-900 dark:bg-teal-900 bg-opacity-10 dark:bg-opacity-50 md:dark:bg-opacity-20 p-3 md:my-12 rounded-lg shadow-lg">
               <p className="px-3  text-day-900 dark:text-teal-300 md:text-center font-medium text-lg md:text-3xl py-8">
-                Here are some of the things I did at SuperHire:
+                I had the privilege of contributing to several key initiatives{" "}
+                <span className="md:block">
+                  during my time at SuperHire, including:
+                </span>
               </p>
               <ul
                 id="SuperHire-things"
