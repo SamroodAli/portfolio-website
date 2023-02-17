@@ -81,7 +81,7 @@ export const ExperienceSection = () => {
         <Heading3 className="mx-3 md:mx-8">Experience</Heading3>
         <ul>
           <li>
-            <Paragraph className="px-3 md:px-4">
+            <Paragraph className="px-3 md:px-8">
               During my tenure at{" "}
               <LinkTextSpan href="http://superhire.net/">
                 SuperHire
