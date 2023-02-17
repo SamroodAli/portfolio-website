@@ -4,6 +4,6 @@
 
 @layer base {
   .app-width {
-    @apply mx-auto w-full lg:w-[968px]  xl:w-[1200px] 2xl:w-[1400px];
+    @apply mx-auto w-full md:px-12 lg:px-32  xl:w-[1200px] 2xl:w-[1400px];
   }
 }
