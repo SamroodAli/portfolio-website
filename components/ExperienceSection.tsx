@@ -4,47 +4,73 @@ import { Paragraph } from "@/components/Paragraph";
 
 const experienceListItems = [
   <>
-    Implementing features and taking full responsibility from planning, writing
-    documentation, designing the database schema, writing API handlers, writing
-    services, writing integration and unit tests and deploying these features
-    following industry best practices.
+    Implemented features and took full responsibility for the entire process,
+    including planning, writing documentation, designing the database schema,
+    writing API handlers, writing services, writing integration and unit tests,
+    and deploying these features following industry best practices.
   </>,
   <>
-    Implementing designs from Figma pixel to pixel using React, Next JS and Vue
-    JS for markup, and vanilla CSS and CSS libraries such Tailwind CSS and
-    Material UI for styling following responsive design and accessibility best
-    practices.
+    Implemented designs from Figma pixel to pixel using React, Next JS, and Vue
+    JS for markup, and vanilla CSS and CSS libraries such as Tailwind CSS and
+    Material UI for styling, following responsive design and accessibility best
+    practices. Collaborated closely with the designer to ensure the final
+    product met their vision and design standards.
   </>,
   <>
-    High level designed RabbitMQ message broker to handle special tasks in our
-    app. Wrote and low level designed repositories for publishing and consuming
-    messages. This helped SuperHire manage tasks such as sending onboarding
-    mails, expiring customer job claims within a few days if they are inactive
-    etc.
+    Designed and implemented a RabbitMQ message broker to handle specialized
+    tasks within our app. This included high-level design of the messaging
+    system, as well as low-level implementation details such as writing
+    repositories for publishing and consuming messages. This system allowed
+    SuperHire to efficiently manage tasks such as sending onboarding emails and
+    expiring customer job claims if they remained inactive for a certain period
+    of time.
   </>,
   <>
-    Taking responsibility and implementing critical auth features such as user
-    onboarding/registration, forgot/reset/change password with OTP mails and
-    other industry best practices.
+    I took ownership of implementing critical authentication features such as
+    user onboarding/registration, forgot/reset/change password workflows with
+    OTP (One-Time Password) mails, and other industry best practices. This
+    involved designing and developing secure and user-friendly authentication
+    flows, incorporating the latest security standards and practices to protect
+    user data and prevent unauthorized access.
   </>,
   <>
-    Managing PostgreSQL schema and data migrations following db normalization
-    and other best practices
+    I was responsible for managing the PostgreSQL schema and data migrations,
+    following best practices such as database normalization. This involved
+    designing and optimizing database tables, ensuring data consistency and
+    integrity, while also keeping performance and scalability in mind.
   </>,
   <>
-    Deploy, manage and debug AWS services such as Beanstalk, RDS, s3 among
-    others,
+    As part of my role, I deployed, managed, and debugged various AWS services,
+    including Beanstalk, RDS, and S3, among others. This involved configuring
+    and fine-tuning these services to meet the specific needs of our
+    applications
   </>,
   <>
-    Automated the workflow of writing a day&apos;s candidate submissions to a
-    google sheet. This helped the company share the google sheet with other
-    companies early on and procure business.
+    To minimize code redundancy, I packaged reusable code as an NPM package and
+    introduced it as a dependency in our projects. This allowed us to more
+    efficiently manage dependencies and reduce the amount of duplicate code in
+    our codebase.
   </>,
   <>
-    Read documentation and setup FreshChat, a 3rd party chatbot + chat service
-    for SuperHire to engage with their customers.
+    I automated the workflow of submitting a day&apos;s candidate data to a
+    Google Sheet, which improved our workflow and helped the company easily
+    share the Google Sheet with other businesses to procure more business
+    opportunities.
   </>,
-  <>Conduct code reviews for fellow engineers following best practices</>,
+  <>
+    I was responsible for reading the documentation and setting up FreshChat, a
+    3rd party chatbot and chat service, to enable SuperHire to engage with its
+    customers in real-time. This involved configuring the system and integrating
+    it with our website, allowing us to provide efficient and effective customer
+    service.
+  </>,
+  <>
+    I conducted code reviews for fellow engineers following best practices,
+    while always striving to be empathetic and caring towards my teammates. I
+    believe that providing constructive feedback in a supportive and considerate
+    manner helps to build stronger relationships, improve team dynamics, and
+    ultimately leads to higher quality code.
+  </>,
 ];
 
 export const ExperienceSection = () => {

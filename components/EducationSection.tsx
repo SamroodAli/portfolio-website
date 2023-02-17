@@ -13,7 +13,7 @@ export const EducationSection = () => {
         <li>
           <Paragraph>
             Despite beginning my career as a
-            <TextSpan> Chartered accountancy student</TextSpan> , I made a
+            <TextSpan> Chartered accountancy student,</TextSpan> I made a
             transition to become a software engineer and have since been
             dedicated to the craft.
             <TextSpan> I taught myself to code</TextSpan> with the book
@@ -39,8 +39,8 @@ export const EducationSection = () => {
             </LinkTextSpan>{" "}
             <TextSpan>, a one year </TextSpan>
             Full-Stack
-            <TextSpan> online coding boot-camp</TextSpan>, which equipped me
-            with the latest programming skills, modern development tools, and
+            <TextSpan> online coding boot-camp,</TextSpan>which equipped me with
+            the latest programming skills, modern development tools, and
             industry-standard methodologies.
           </Paragraph>
         </li>
