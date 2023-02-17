@@ -6,6 +6,7 @@ import { TextSpan } from "@/components/TextSpan";
 import { useTheme } from "@/hooks/useTheme";
 import { AppLayout } from "@/layouts/AppLayouts";
 import Head from "next/head";
+import Link from "next/link";
 
 const quickLinks: LinkBadgeProps[] = [
   {
@@ -158,17 +159,37 @@ export default function Home() {
             <li>
               <Paragraph>
                 To learn front-end web development, I completed
-                <TextSpan>Udacity&apos;s Front-end Nanodegree program</TextSpan>
+                <TextSpan>
+                  <Link
+                    className="underline underline-offset-4"
+                    href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011"
+                    target={"_blank"}
+                  >
+                    {" "}
+                    Udacity&apos;s Front-end Nanodegree program
+                  </Link>
+                </TextSpan>
                 , which provided me with a strong foundation in web development.
               </Paragraph>
             </li>
             <li>
               <Paragraph>
-                In addition, I completed a<TextSpan> 1 year</TextSpan>{" "}
+                In addition, I completed{" "}
+                <TextSpan>
+                  <Link
+                    href="https://www.microverse.org/?gclid=Cj0KCQiA6LyfBhC3ARIsAG4gkF8hCCGBrxqVe_fvKGf6evyWNFuW8c5ODoWTsbZsp_A8lag8VWUHOn8aAjeXEALw_wcB"
+                    target="_blank"
+                    className="underline underline-offset-4"
+                  >
+                    {" "}
+                    Microverse
+                  </Link>
+                  , a one year
+                </TextSpan>{" "}
                 Full-Stack
-                <TextSpan> online coding boot-camp, Microverse </TextSpan>,
-                which equipped me with the latest programming skills, modern
-                development tools, and industry-standard methodologies.
+                <TextSpan> online coding boot-camp</TextSpan>, which equipped me
+                with the latest programming skills, modern development tools,
+                and industry-standard methodologies.
               </Paragraph>
             </li>
 
