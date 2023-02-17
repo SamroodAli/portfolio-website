@@ -3,6 +3,7 @@ import { Inter } from "@next/font/google";
 import { FC, ReactNode, useEffect, useState } from "react";
 import { useAppSelector } from "@/hooks/useStore";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,8 @@ export const AppLayout: FC<Props> = ({ children, className }) => {
       >
         {children}
       </div>
+
+      <Footer />
     </main>
   );
 };
