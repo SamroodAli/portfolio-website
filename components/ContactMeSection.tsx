@@ -1,6 +1,5 @@
 import { Heading3 } from "@/components/Heading3";
 import { LinkButton } from "@/components/LinkButton";
-import Link from "next/link";
 
 const email = process.env.NEXT_PUBLIC_MY_EMAIL;
 const phone = process.env.NEXT_PUBLIC_MY_PHONE;

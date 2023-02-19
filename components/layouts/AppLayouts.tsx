@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { Inter } from "@next/font/google";
-import { FC, ReactNode, useEffect, useState } from "react";
+import { FC, ReactNode } from "react";
 import { useAppSelector } from "@/hooks/useStore";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";

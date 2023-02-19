@@ -1,5 +1,4 @@
-import { fira } from "@/fonts";
-import { ContainerElement, Element } from "@/types/Element";
+import { ContainerElement } from "@/types/Element";
 import classNames from "classnames";
 import { FC } from "react";
 
