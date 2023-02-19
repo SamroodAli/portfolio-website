@@ -34,11 +34,9 @@ export const EducationSection = () => {
           <Paragraph>
             In addition, I completed{" "}
             <LinkTextSpan href="https://www.microverse.org/?gclid=Cj0KCQiA6LyfBhC3ARIsAG4gkF8hCCGBrxqVe_fvKGf6evyWNFuW8c5ODoWTsbZsp_A8lag8VWUHOn8aAjeXEALw_wcB">
-              {" "}
               Microverse
             </LinkTextSpan>{" "}
-            <TextSpan>, a one year </TextSpan>
-            Full-Stack
+            a Full Stack <TextSpan>one year</TextSpan>
             <TextSpan> online coding boot-camp,</TextSpan>which equipped me with
             the latest programming skills, modern development tools, and
             industry-standard methodologies.
