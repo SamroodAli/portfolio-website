@@ -14,7 +14,7 @@ const quickLinks: LinkBadgeProps[] = [
     label: "Github",
   },
   {
-    href: "https://docs.google.com/document/d/e/2PACX-1vT3xvPGKfzcYs645N2WDpQBFdozD2WQdg5lWbkWSXggqenpHdVnMO68ZQUmyi7Ny7ehgFMB6ftod2h5/pub",
+    href: "./Samrood-Ali-Resume.pdf",
     label: "Resume",
   },
   {
