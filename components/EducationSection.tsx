@@ -42,25 +42,6 @@ export const EducationSection = () => {
             industry-standard methodologies.
           </Paragraph>
         </li>
-
-        <li>
-          <Paragraph>
-            Right now, I am attending{" "}
-            <LinkTextSpan href="https://www.scaler.com/academy">
-              Scaler Academy
-            </LinkTextSpan>
-            , an institute for working professionals to up-skill themselves. I
-            joined scaler to get a good foundation in computer science
-            fundamentals and to make sure I am always learning.
-          </Paragraph>
-        </li>
-
-        <li>
-          <Paragraph className="italic font-medium">
-            Sorry, but if you&apos;re searching for a degree, I&apos;m not your
-            person. No hard feelings though!
-          </Paragraph>
-        </li>
       </ul>
     </section>
   );

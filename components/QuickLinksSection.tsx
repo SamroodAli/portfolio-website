@@ -14,8 +14,16 @@ const quickLinks: LinkBadgeProps[] = [
     label: "Github",
   },
   {
-    href: "./Samrood-Ali-Resume.pdf",
+    href: "https://docs.google.com/document/d/1mgNA_tafK0QarjSP8wplMf9nlxKKX5AwxmOBzmDXQJU/export?format=pdf",
     label: "Resume",
+  },
+  {
+    href: `https://stackoverflow.com/users/13533321/samrood-ali`,
+    label: "StackOverflow",
+  },
+  {
+    href: `https://medium.com/@devsamrood`,
+    label: "Medium",
   },
   {
     href: `tel:${process.env.NEXT_PUBLIC_MY_PHONE}`,
