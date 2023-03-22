@@ -3,7 +3,7 @@ import { createState } from "@/store/utils/createState";
 export const { appActions, appReducer } = createState({
   name: "app",
   initialState: {
-    isDarkMode: false,
+    isDarkMode: true,
   },
   reducers: {
     toggle: (state) => {
