@@ -1,4 +1,5 @@
 import { Heading3 } from "@/components/Heading3";
+import { LinkTextSpan } from "@/components/LinkTextSpan";
 import { Paragraph } from "@/components/Paragraph";
 import { useTheme } from "@/hooks/useTheme";
 
@@ -27,9 +28,16 @@ export const IntroSection = () => {
           <Heading3>Who am I ?</Heading3>
         </header>
         <Paragraph>
-          I&apos;m a software engineer with a passion for building and
-          maintaining innovative web applications. I specialize in Full Stack
-          web development. In short, I can handle all your web related needs
+          I am a software development engineer with a passion for building and
+          maintaining innovative web applications. My expertise lies in Full
+          Stack web development, and I am currently working at{" "}
+          <LinkTextSpan href="https://peoplegrove.com">
+            PeopleGrove
+          </LinkTextSpan>
+          , where I contribute to the success of the company by utilizing my
+          skills to develop cutting-edge solutions and drive growth. I am
+          excited to be a part of the PeopleGrove team and eager to continue
+          making a positive impact with my web development capabilities.
         </Paragraph>
       </section>
     </>

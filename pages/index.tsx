@@ -1,6 +1,4 @@
 import { ContactMeSection } from "@/components/ContactMeSection";
-import { EducationSection } from "@/components/EducationSection";
-import { ExperienceSection } from "@/components/ExperienceSection";
 import { Footer } from "@/components/Footer";
 import { HeaderSection } from "@/components/HeaderSection";
 import { IntroSection } from "@/components/IntroSection";
@@ -21,8 +19,8 @@ export default function Home() {
         <HeaderSection />
         <QuickLinksSection />
         <IntroSection />
-        <EducationSection />
-        <ExperienceSection />
+        {/* <EducationSection /> */}
+        {/* <ExperienceSection /> */}
         <ContactMeSection />
         <Footer />
       </AppLayout>
