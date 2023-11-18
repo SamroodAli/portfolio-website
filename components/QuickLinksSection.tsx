@@ -25,10 +25,6 @@ const quickLinks: LinkBadgeProps[] = [
     href: `https://medium.com/@devsamrood`,
     label: "Medium",
   },
-  {
-    href: `tel:${process.env.NEXT_PUBLIC_MY_PHONE}`,
-    label: "Phone",
-  },
 ];
 
 export const QuickLinksSection = () => {
