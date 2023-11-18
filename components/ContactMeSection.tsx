@@ -17,7 +17,6 @@ export const ContactMeSection = () => {
       </header>
       <div className="flex justify-center">
         <LinkButton href={`mailto:${email}`}>Send me a mail</LinkButton>
-        <LinkButton href={`tel:${phone}`}>Give me a call</LinkButton>
       </div>
     </section>
   );
